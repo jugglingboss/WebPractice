@@ -172,8 +172,8 @@
 // const add5 = num1 => num1+5
 // console.log(add5(1))
 
-function Person(firstname, lastname, dob){
+//function Person(firstname, lastname, dob){
 
-}
+//}
 
 

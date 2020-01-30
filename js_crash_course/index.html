@@ -3,6 +3,19 @@
 <head>
 
     <title>JS Crash Course</title>
+
+    <script>
+        function restcall(){
+            const Http = new XMLHttpRequest();
+            const url='http://jugglingboss.hopto.org/LightsOn.php';
+            Http.open("GET", url);
+            Http.send();
+
+            Http.onreadystatechange = (e) => {
+            console.log(Http.responseText)
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -10,8 +23,11 @@
             JS Crash Course
         </h1>
     </header>
+    
+    <!--<script src="main.js">
+    </script>-->
+    
+    <button onclick="JavaScript:restcall()">Click Me</button>
 
-    <script src="main.js">
-    </script>
 </body>
 </html>
