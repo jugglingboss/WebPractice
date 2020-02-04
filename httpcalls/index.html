@@ -7,16 +7,24 @@
     <title>Document</title>
 
     <script>
-        function restcall(){
-            const Http = new XMLHttpRequest();
-            const url='http://jugglingboss.hopto.org/LightsOn.php';
-            Http.open("GET", url);
-            Http.send();
+        // function restcall(){
+        //     const Http = new XMLHttpRequest();
+        //     const url='http://jugglingboss.hopto.org/LightsOn.php';
+        //     Http.open("GET", url);
+        //     Http.send();
 
-            Http.onreadystatechange = (e) => {
-            console.log(Http.responseText)
+        //     Http.onreadystatechange = (e) => {
+        //     console.log(Http.responseText)
+        //     }
+        //}
+            function restcall(){
+                console.log("here")
+                fetch('http://jugglingboss.hopto.org/LightsOn.php')
+                    .then(function(respone) {
+                        return respone.json
+                    })
             }
-        }
+
     </script>
 </head>
 <body>
