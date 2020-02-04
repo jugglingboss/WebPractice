@@ -172,8 +172,68 @@
 // const add5 = num1 => num1+5
 // console.log(add5(1))
 
-//function Person(firstname, lastname, dob){
+// // Constructor function
+// function Person(firstName, lastName, dob){
+//     this.firstName = firstName;
+//     this.lastName =lastName;
+//     this.dob = new Date (dob);
+//     // this.getBirthYear = function() {
+//     //     return this.dob.getFullYear()
+//     // }
+//     // this.getFullName = function(){
+//     //     return `${this.firstName} ${this.lastName}`
+//     // }
+// }
 
-//}
+// Person.prototype.getBirthYear = function(){
+//     return this.dob.getFullYear()
+// }
+
+// Person.prototype.getFullName = function(){
+//     return  `${this.firstName} ${this.lastName}`
+// }
+
+// //Class (same this as above except in a prettier way)
+// class Person{
+//     constructor(firstName, lastName, dob){
+//         this.firstName = firstName;
+//         this.lastName =lastName;
+//         this.dob = new Date (dob);
+//     }
+
+//     getBirthYear(){
+//         return this.dob.getFullYear()
+//     }
+//     getFullName(){
+//         return  `${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// //Instantiate object
+// const person1 = new Person('John', 'Doe', '4-3-1980');
+// const person2 = new Person('Mery', 'Smith', '3-6-1980');
+
+// //console.log(person2.dob.getFullYear());
+// //console.log(person1.getBirthYear())
+// //console.log(person1.getFullName());
+
+// console.log(person2.getFullName())
+// console.log(person1)
+
+
+//console.log(window);
+//Single element
+//console.log(document.getElementById('my-form'))
+//console.log(document.querySelector('.container'))
+//console.log(document.querySelector('h1'))
+
+//Multiple element
+//console.log(document.querySelectorAll('.item')) //use this
+//console.log(document.getElementsByClassName('item'))  //not this, the above one can select anything while this can only select classes
+//console.log(document.getElementsByTagName('item'))  //not this, the above one can select anything while this can only select classes
+
+//const items = document.querySelectorAll('.item');
+//items.forEach((item) => console.log(item))
+
 
 
