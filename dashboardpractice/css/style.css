@@ -22,12 +22,12 @@ body{
 .row button{
     background-color: #1b1b1b;
     color: #ff6600;
-    border-color:  #ff6600;
+    border-color:  #9a65ee;
     background-color: rgb(82, 82, 82);
     font-weight: 900;
     padding: 20%;
     border-radius: 10%;
-    width: 95%;
+    width: 97%;
 }
 
 button:hover{
