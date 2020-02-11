@@ -15,31 +15,25 @@ body{
 #main-header{
     background-color: #ff6600;
 }
-
-.row{
-    padding-top: 15px;
-}
-.row button{
-    background-color: #1b1b1b;
+table{
+    margin-top: 30px;
     color: #ff6600;
-    border-color:  #ff6600;
-    background-color: rgb(82, 82, 82);
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
     font-weight: 900;
-    padding: 20%;
-    border-radius: 10%;
-    width: 97%;
+    border-spacing: 10px 0px;
 }
-
-button:hover{
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+td{
+    background-color: rgb(82, 82, 82);
+    border: 3px solid #ff6600;
+    border-radius: 10%;
+    padding: 40px 0px; 
+}
+td:hover{
     color: white;
 }
-
-.col{
-    float: left;
-    width: 25%;
-    box-sizing: border-box;
-}
-
-
-
-
