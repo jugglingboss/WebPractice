@@ -59,10 +59,48 @@
                 </td>
             </tr>
             <tr>
-                <td>Blinds</td>
+                <td colspan="2" rowspan="2">
+                    <div class="title">
+                        <p>Blinds</p>
+                    </div>
+                    <div class="first">
+                        <p>Up</p>
+                    </div>
+                    <div class="middle">
+                        <p>Cycle</p>
+                    </div>
+                    <div class="last">
+                        <p>Down</p>
+                    </div>
+                    <div class="form">
+						<form action="alarm.php" method="POST">
+							<div class="alarmtext">
+								<p>Alarm Time</p>
+							</div>
+							<div class="alarmtime">
+								<input id="time" type="time" name="time">
+							</div>	
+							
+						<input id="submit" type="submit" />
+						<form action="alarm.php" method="POST">
+						<input id="submit" type="submit" value="Turn Off" />
+					</div>
+                </td>
                 <td>Corner Light</td>
                 <td>LED Light</td>
-                <td>Wake Up Light</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="title">
+                        <p>Blinds</p>
+                    </div>
+                    <div class="on">
+                        <p>Up</p>
+                    </div>
+                    <div class="off">
+                        <p>Down</p>
+                    </div>
+                </td>
             </tr>
         </table>
     </div>

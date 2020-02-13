@@ -15,17 +15,38 @@ body{
     float: left;
     width: 50%;
 }
+.on:hover{
+    color: white;
+}
 .off{
     float: right;
     width: 50%;
 }
+.off:hover{
+    color: black;
+}
 .title{
     padding-bottom: 10px;
 }
-.on:hover{
+.first{
+    float: left;
+    width: 33%;
+}
+.first:hover{
     color: white;
 }
-.off:hover{
+.middle{
+    float: left;
+    width: 33%;
+}
+.middle:hover{
+    color: yellow;
+}
+.last{
+    float: right;
+    width: 33%;
+}
+.last:hover{
     color: black;
 }
 p{
@@ -42,7 +63,7 @@ table{
     text-align: center;
     table-layout: fixed;
     font-weight: 900;
-    border-spacing: 10px 0px;
+    border-spacing: 10px 10px;
 }
 table.center {
     margin-left:auto; 
@@ -54,3 +75,18 @@ td{
     border-radius: 10%;
     padding: 15px 0px; 
 }
+.alarmtext{
+    padding-top: 30px;
+}
+#submit{
+    background-color: #1b1b1b;
+    border: 0px;
+    border-radius: 10%;
+    color: #ff6600;
+    font-weight: 900;
+}
+#time{
+    background-color: rgb(82, 82, 82);
+    border-color: #1b1b1b;
+}
+
