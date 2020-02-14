@@ -13,14 +13,21 @@ body{
 }
 .on{
     float: left;
-    width: 50%;
+    width: 45%;
 }
 .on:hover{
     color: white;
 }
+.Light{
+    float: left;
+    width: 10%;
+    color: #1b1b1b;
+    font-size: 80px;
+
+}
 .off{
     float: right;
-    width: 50%;
+    width: 45%;
 }
 .off:hover{
     color: black;
