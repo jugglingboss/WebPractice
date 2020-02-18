@@ -13,21 +13,21 @@ body{
 }
 .on{
     float: left;
-    width: 45%;
+    width: 40%;
 }
 .on:hover{
     color: white;
 }
 .Light{
     float: left;
-    width: 10%;
+    width: 20%;
     color: #1b1b1b;
-    font-size: 80px;
+    font-size: 5vw;
 
 }
 .off{
     float: right;
-    width: 45%;
+    width: 40%;
 }
 .off:hover{
     color: black;
@@ -61,11 +61,11 @@ p{
     padding: 0;
 }
 #main-header{
-    background-color: #ff6600;
+    background-color:white;
 }
 table{
     margin-top: 30px;
-    color: #ff6600;
+    color: white;
     width: 100%;
     text-align: center;
     table-layout: fixed;
@@ -77,9 +77,9 @@ table.center {
     margin-right:auto;
 }
 td{
-    background-color: rgb(82, 82, 82);
-    border: 3px solid #ff6600;
-    border-radius: 10%;
+    background-color: rgb(102, 102, 102);
+    border: 0px solid #ff6600;
+    border-radius: 0%;
     padding: 15px 0px; 
 }
 .alarmtext{
@@ -89,11 +89,17 @@ td{
     background-color: #1b1b1b;
     border: 0px;
     border-radius: 10%;
-    color: #ff6600;
+    color: white;
     font-weight: 900;
 }
 #time{
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(102, 102, 102);
     border-color: #1b1b1b;
 }
-
+.icon {
+    background: url(/dashboardtable/images/AC.png);
+    height: 100px;
+    width: 100px;
+    display: block;
+    /* Other styles here */
+  }
