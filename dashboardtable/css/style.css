@@ -97,9 +97,15 @@ td{
     border-color: #1b1b1b;
 }
 .icon {
-    background: url(/dashboardtable/images/AC.png);
-    height: 100px;
-    width: 100px;
+    content: url(/dashboardtable/images/AC.png);
     display: block;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3vw;
     /* Other styles here */
+  }
+  .AC{
+      width: 20%;
+      float: left;
   }
