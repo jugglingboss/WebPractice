@@ -16,7 +16,7 @@ body{
     width: 40%;
 }
 .on:hover{
-    color: white;
+    color: yellow;
 }
 .Light{
     float: left;
@@ -40,7 +40,7 @@ body{
     width: 33%;
 }
 .first:hover{
-    color: white;
+    color: yellow;
 }
 .middle{
     float: left;
@@ -102,7 +102,7 @@ td{
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    width: 3.5vw;
+    width: 3.8vw;
     /* Other styles here */
   }
   .AC{
