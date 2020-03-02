@@ -18,7 +18,18 @@ function drawWeather( d ) {
     const Des = des.charAt(0).toUpperCase() + des.slice(1)
     document.getElementById('Weather_des').innerHTML = Des;
 }
+function iconOnWindowLoad(){
+    var ourRequest = new XMLHttpRequest();
+    ourRequest.open('GET','https://learnwebcode.github.io/json-example/animals-1.json');
+    console.log(ourRequest)
+    ourRequest.onload = function(){
+        var ourData = JSON.parse(ourRequest.responseText);
+        console.log(ourData);
+    }
+}
+
 
 window.onload = function() {
     weatherBalloon("5206379");
+    iconOnWindowLoad();
 }
