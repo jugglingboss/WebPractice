@@ -105,7 +105,10 @@ td{
     width: 3.8vw;
     /* Other styles here */
   }
-  .AC{
+.AC{
       width: 20%;
       float: left;
   }
+.iconON{
+    color: red;
+}

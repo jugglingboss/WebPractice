@@ -1,3 +1,10 @@
 {
-    "CeilingLight" : "Off"
+    "Lights": [
+        {
+            "CeilingLight" : "Off",
+            "CornerLight" : "Off",
+            "LEDLight" : "Off",
+            "WakeUpLight" : "Off" 
+        }
+    ]   
 }

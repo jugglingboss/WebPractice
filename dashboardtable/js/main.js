@@ -19,12 +19,26 @@ function drawWeather( d ) {
     document.getElementById('Weather_des').innerHTML = Des;
 }
 function iconOnWindowLoad(){
-    var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET','https://learnwebcode.github.io/json-example/animals-1.json');
-    console.log(ourRequest)
-    ourRequest.onload = function(){
-        var ourData = JSON.parse(ourRequest.responseText);
-        console.log(ourData);
+    fetch('http://jugglingboss.hopto.org/Data.json')
+    .then(function(resp){return resp.json()})
+    .then(function(data){
+        console.log(data)
+        console.log("here1")
+        allIcons(data)
+    })
+    .catch(function() {
+        // catch any errors
+    });
+}
+function allIcons( d ){
+    console.log("here2")
+    var icon = document.getElementById('CeilingLight');
+    console.log(d.Lights[0].CeilingLight)
+    if(d.Lights[0].CeilingLight == 'Off'){
+        icon.className = "far fa-lightbulb"
+    }
+    if (d.Lights[0].CeilingLight == 'On') {
+        icon.className = "fas fa-lightbulb"
     }
 }
 
