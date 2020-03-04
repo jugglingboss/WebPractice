@@ -23,7 +23,6 @@ function iconOnWindowLoad(){
     .then(function(resp){return resp.json()})
     .then(function(data){
         console.log(data)
-        console.log("here1")
         allIcons(data)
     })
     .catch(function() {
@@ -31,14 +30,17 @@ function iconOnWindowLoad(){
     });
 }
 function allIcons( d ){
-    console.log("here2")
     var icon = document.getElementById('CeilingLight');
-    console.log(d.Lights[0].CeilingLight)
-    if(d.Lights[0].CeilingLight == 'Off'){
+    var iconParent = document.getElementById('CeilingLightParent');
+    if(d.Lights.CeilingLight == 'Off'){
         icon.className = "far fa-lightbulb"
+        icon.classList.add("Lightoff")
+        console.log("off")
     }
-    if (d.Lights[0].CeilingLight == 'On') {
+    if (d.Lights.CeilingLight == 'On') {
         icon.className = "fas fa-lightbulb"
+        icon.classList.add("Lighton")
+        console.log("on")
     }
 }
 

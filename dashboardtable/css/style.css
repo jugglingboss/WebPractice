@@ -23,7 +23,18 @@ body{
     width: 20%;
     color: #1b1b1b;
     font-size: 5vw;
-
+}
+.Lighton{
+    float: left;
+    width: 20%;
+    color: yellow;
+    font-size: 5vw;
+}
+.Lightoff{
+    float: left;
+    width: 20%;
+    color: #1b1b1b;
+    font-size: 5vw;
 }
 .off{
     float: right;
