@@ -30,17 +30,23 @@ function iconOnWindowLoad(){
     });
 }
 function allIcons( d ){
-    var icon = document.getElementById('CeilingLight');
-    var iconParent = document.getElementById('CeilingLightParent');
-    if(d.Lights.CeilingLight == 'Off'){
-        icon.className = "far fa-lightbulb"
-        icon.classList.add("Lightoff")
-        console.log("off")
-    }
-    if (d.Lights.CeilingLight == 'On') {
-        icon.className = "fas fa-lightbulb"
-        icon.classList.add("Lighton")
-        console.log("on")
+    individualIcon('CeilingLight')
+    individualIcon('CornerLight')
+    individualIcon('LEDLight')
+    individualIcon('WakeUpLight')
+
+    function individualIcon( Name){
+        var IconName = document.getElementById(Name);
+        if(d.Lights[Name] == 'Off'){
+            IconName.className = "far fa-lightbulb"
+            IconName.classList.add("Lightoff")
+            console.log(Name + " off")
+        }
+        if (d.Lights[Name] == 'On') {
+            IconName.className = "fas fa-lightbulb"
+            IconName.classList.add("Lighton")
+            console.log(Name + " on")
+        }
     }
 }
 
