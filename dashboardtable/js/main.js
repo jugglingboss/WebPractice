@@ -50,6 +50,13 @@ function allIcons( d ){
     }
 }
 
+function CeilingLight(){
+    console.log("CeilingLight js fetch call")
+    fetch('http://jugglingboss.hopto.org/LightsOn.php')
+        .then(function(respone) {
+            return respone.json
+        })
+}
 
 window.onload = function() {
     weatherBalloon("5206379");
